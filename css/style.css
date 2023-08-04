@@ -896,11 +896,11 @@ margin-top: 72px;
     align-items: center;
 }
 .input-sub {
-width: 398px;
+max-width: 398px;
 height: 40px;
 }
 .subscribe .button {
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
 }
