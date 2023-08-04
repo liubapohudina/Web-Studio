@@ -856,7 +856,54 @@ form {
             line-height: 2;
             letter-spacing: 0.04em;
 }
+/*----------adaptive footer------------*/
+@media (max-width: 428px) {
 
+.footer {
+ padding: 96px 0;
+}
+.footer .link {
+    width: 117px;
+ 
+}
+.footer .footer-text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+.footer .title-text {
+    width: 268px;
+    text-align: left;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+}
+.text,
+.form-text {
+    display: block;
+    text-align: center;
+}
+.form-text {
+margin-top: 72px;
+}
+.form-subscribe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-sub {
+width: 398px;
+height: 40px;
+}
+.subscribe .button {
+    display: block;
+    margin: 0 auto;
+}
+}
 /*-------------------------------------PAGE PORTFOLIO--------------------*/
 
 
