@@ -32,11 +32,13 @@
                 </li>
                 </ul>
             </address>
-            <div class="open-menu js-open-menu">
+            <button class="open-menu menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
                 <svg class="hamburger-header" width="32" height="22">
                     <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
                 </svg>
-            </div>
+            </button>
         </div>
          </header>
         <main>
@@ -438,9 +440,9 @@
                     </form>
                 </div>
                 </div>
-                <div class="menu  js-menu-container">
+                <div class="menu menu-container js-menu-container is-hidden" id="mobile-menu">
                     <div class="container">
-                        <div class="menu-window">
+                        <div class="menu-window mobile-menu">
                     <button data-modal-close type="button" class="modal-button menu-btn">
                         <svg class="item-modal" width="8" height="8">
                             <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
@@ -498,6 +500,10 @@
                         </div>
                     </div>
                 </div>
+                <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+                    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+                    crossorigin="anonymous"></script>
+        <script src="./js/mobil-menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>
