@@ -198,10 +198,7 @@ header .container {
         }
     
     .header  {
-        display: flex;
         padding: 24px 16px;
-        justify-content: space-between;
-  
     }
     .logo {
         align-self: flex-start;
