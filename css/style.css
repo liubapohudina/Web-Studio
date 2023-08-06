@@ -167,6 +167,7 @@ header .container {
         font-style: normal;
     }
     .contacts .list .link {
+        z-index: 5;
         font-family: var(--primary-font);
         color: var(--primary-color-slate);
         text-transform: none;
@@ -179,6 +180,38 @@ header .container {
     .contacts .list .link:focus,
     .contacts .list .link:hover {
         color: var(--active-text-color);
+    }
+    .hamburger-header {
+        stroke: #2E2F42;
+        fill: #2E2F42;
+        background-color: transparent;
+    }
+    .open-menu {
+        display: none;
+    }
+    /*----------adaptive header-------*/
+    @media (min-width: 427px) {
+        .open-menu  {
+            display: flex;
+            width: 32px;
+            height: 22px;
+        }
+    
+    .header  {
+        display: flex;
+        padding: 24px 16px;
+        justify-content: space-between;
+  
+    }
+    .logo {
+        align-self: flex-start;
+        display: block;
+    }
+   
+        .nav .list,
+        .contacts .list {
+            display: none;
+        }
     }
 /*----------------------------------HERO-----------------------*/
 .section-hero {
@@ -233,7 +266,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--active-text-color);
 }
 /*------adaptive hero------*/
-@media (max-width: 428px) {
+@media (min-width: 427px) {
     .container {
         max-width: 428px;
         margin: 0 auto;
@@ -478,7 +511,82 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.04em;
     color: var(--section-customers-icon);
 }
+/*----------------------MENU WINDOW-----------*/
+@media (min-width: 427px) {
+    .menu  {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 428px;
+        height: 796px;
+        background: var(--color-text-onesect, #FFF);
+        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    }
+    
+    .menu .container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    position: relative;
+    }
+    .menu-btn {
+        position: absolute;
+    }
+    .menu .nav .list,
+    .menu .contacts .list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        
+    }
+    .list .nav {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+  
+    .list .link {
+        color: var(--navyblue-modal, #2E2F42);
+            font-family: var(--primary-font);
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.11;
+            text-transform: capitalize;
+    }
+    .menu .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts {
+        margin-top: 284px;
+        margin-bottom: 42px;
+    }
+        .current::after {
+            display: none;
+        }
+        .contacts .list .link {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.2;
+        }
+        .contacts .list .tel {
+                color: var(--color-logo);
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1.11;
+                text-transform: capitalize;
+                font-style: normal;
+        }
+        .menu .social .list {
+            display: flex;
+            gap: 56px; 
+        }
+        .menu .social .list .item {
+            width: 40px;
+            height: 40px;
+        }
 
+}
 /*---------------------------------------SECTION OFFER----------------------------*/
 
 .section-offer  {
@@ -519,7 +627,7 @@ letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
 /*----------adaptive section offer-------*/
-@media (max-width: 428px) {
+@media (min-width: 427px) {
   .section-offer .list .icon-top {
     display: none;
 }
@@ -567,7 +675,7 @@ margin-bottom: 72px;
     flex-basis: calc((100% - 48px) / 3);
 }
 /*--------------adaptive section doing------------*/
-@media (max-width: 428px)  {
+@media (min-width: 427px)  {
     .section-doing {
         display: none;
     }
@@ -856,7 +964,7 @@ form {
             letter-spacing: 0.04em;
 }
 /*----------adaptive footer------------*/
-@media (max-width: 428px) {
+@media (min-width: 427px) {
 
 .footer {
  padding: 96px 0;
@@ -893,9 +1001,9 @@ margin-top: 72px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 .input-sub {
-max-width: 398px;
 height: 40px;
 }
 .subscribe .button {
