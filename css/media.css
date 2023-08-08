@@ -21,12 +21,18 @@
     .section-offer  .title {
         text-align: unset;
     }
+    .section-title-team .list {
+        gap: 64px 24px;
+    }
+    .section-team-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
 }
 
 
 /*---------------desctop----------------*/
 
-@media screen and (min-width: 1166px){
+@media screen and (min-width: 1166px) {
      .container {
         max-width: 1440px;
     }
@@ -53,4 +59,18 @@
     .section-offer .title-text {
         font-weight: 400;
     }
+    .section-doing {
+        display: block;
+    }
+    .section-title-team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .section-team-item {
+        flex-basis: calc((100% - 24px) / 4);
+    }
+    .section-title-team .list {
+        flex-wrap: nowrap;
+    }
+         
 }
