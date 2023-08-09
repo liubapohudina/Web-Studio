@@ -853,9 +853,11 @@ margin-bottom: 72px;
 
 .footer {
     background-color: var(--backgroung-color-onesect);
-    padding: 100px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
     
 }
+
 .footer .link {
     font-family: "Raleway", sans-serif;
     color: var(--color-logo);
@@ -865,19 +867,18 @@ line-height: 1.17;
 letter-spacing:  0.03em;
 text-transform: uppercase;
 text-decoration: none;
-margin-bottom: 16px;
+margin-bottom: 17px;
 width: 115px;
 display: inline-block;
 }
 .footer .footer-text {
     box-sizing: content-box;
-    text-align: left;
-    margin-right: 120px
+    text-align: center;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.footer-section {
-    display: flex;
-    align-items: baseline;
-}
+
 
 .footer .logo-studio-footer {
     color: var(--color-text-footer);
@@ -889,6 +890,9 @@ display: inline-block;
     letter-spacing: 0.02em;
     font-size: 16px;
     width: 264px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
     
@@ -900,6 +904,7 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 margin-bottom: 16px;
+text-align: center;
 }
 .icon-soc {
     width: 100%;
@@ -921,16 +926,20 @@ margin-bottom: 16px;
 .social .list {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 .social .icon-soc:hover ,
 .social .icon-soc:focus {
 background-color: var(--icon-footer-hover);
 }
 .subscribe {
-    margin-left: 80px;
+    margin-top: 72px;
 }
 form {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
 }
 .subscribe .button {
     font-family: var(--primary-font);
@@ -952,6 +961,7 @@ form {
         margin-left: 24px; 
         min-width: 165px;
         height: 40px;
+        margin: 0 auto;
 }
 .subscribe .button:hover,
 .subscribe .button:focus {
@@ -969,11 +979,9 @@ form {
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        text-align: center;
 }
-.form-subscribe {
-    display: flex;
-    gap: 24px;
-}
+
 .input-sub {
     font-size: 12px;
     line-height: 1.5;
@@ -981,7 +989,7 @@ form {
     border-radius: 4px;
         border: 1px solid var(--background-color-white);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        width: 264px;
+        width: 398px ;
         height: 40px;
         background-color: inherit;
         padding-left: 16px;
