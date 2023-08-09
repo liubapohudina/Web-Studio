@@ -10,6 +10,9 @@
     header .container {
     max-width: 768px;
     }
+    .container {
+        max-width: 768px;
+    }
     .section-offer .list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -27,6 +30,7 @@
     .section-team-item {
         flex-basis: calc((100% - 24px) / 2);
     }
+   
   
     .logo {
         margin-right: 120px;
@@ -55,6 +59,12 @@
     }
     .current::after {
         display: block;
+    }
+    .backdrop {
+        padding: 96px 180px 338px 180px;
+    }
+    .modal {
+        width: 408px;
     }
 }
 
@@ -110,5 +120,11 @@
     }
     .contacts .list .link {
         font-size: 16px;
+    }
+    .backdrop {
+        padding: 80px 516px 12px 516px;
+    }
+    .modal {
+        width: 408px;
     }
 }
