@@ -67,10 +67,9 @@ main {
 
 /*-------------------HEADER--------------------*/
 header .container {
-    min-width: 428px;
+    max-width: 426px;
     display: flex;
     justify-content: space-between;
-    padding: 24px 16px;
     }
     .header {
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -523,7 +522,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--section-customers-icon);
 }
 /*----------------------MENU WINDOW-----------*/
-/*@media (min-width: 427px) {*/
+/*@media (min-width: 428px) {*/
     .menu  {
         position: fixed;
             top: 0;
@@ -556,7 +555,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         gap: 40px;
         
     }
-    .list .nav {
+    .menu .list .nav {
         padding-top: 0;
         padding-bottom: 0;
     }
