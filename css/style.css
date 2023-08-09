@@ -810,9 +810,10 @@ text-transform: capitalize;
 margin-bottom: 72px;
 }
 .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+   padding-top: 96px;
+   padding-bottom: 96px;
 }
+
 .customers .icon {
     fill: var(--section-customers-icon);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -830,12 +831,13 @@ margin-bottom: 72px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers .list .item {
-    flex-basis: calc((100% - 120px) / 6);
+    flex-basis: calc((100% - 16px) / 2);
     height: 88px;
 }
 .customers .list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 16px;
 }
 .customers .icon-top:hover,
 .customers .icon-top:focus {
