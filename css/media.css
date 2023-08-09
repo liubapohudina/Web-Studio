@@ -75,6 +75,9 @@
     .customers .container {
             max-width: 582px;
     }
+    .customers .icon {
+        width: 104px;
+    }
 }
 
 
