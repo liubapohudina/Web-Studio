@@ -43,6 +43,18 @@
     .container {
         max-width: 768px;
     }
+    .section-hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
+        url(../images/retina/background-hero-tablet-1x.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    .section-hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/retina/background-hero-tablet-2x.jpg);
+    }
+}
     .section-offer .list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -146,6 +158,18 @@
 @media screen and (min-width: 1166px) {
      .container {
         max-width: 1158px;
+    }
+    .section-hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/retina/background-hero-desctop-1x.jpg);
+    }
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) and (min-width: 1166px) {
+    .section-hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                    url(../images/retina/background-hero-desctop-2x.jpg);
+             }
     }
     .section-offer .container {
         padding-top: 120px;

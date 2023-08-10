@@ -204,14 +204,21 @@ header .container {
 /*----------------------------------HERO-----------------------*/
 .section-hero {
     background-color: var(--backgroung-color-onesect);
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/background-hero.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+     url(../images/retina/background-hero-mobile-1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     text-align: center;
     font-family: "Roboto", sans-serif;
-  
-   
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section-hero {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/retina/background-hero-mobile-2x.jpg);
+    }
 }
 .section-hero .container {
     padding-top: 112px;
