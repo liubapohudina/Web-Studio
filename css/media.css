@@ -9,6 +9,30 @@
       padding-bottom: 24px;
   }
 }
+@media screen and (max-width: 340px) {
+    .page-title {
+        max-width: 310px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .input-sub {
+        max-width: 290px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+    .menu-container .contacts .list .tel {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .menu-container .social .list {
+        gap: 35px;
+    }
+    .menu-container .social .list .item {
+        width: 35px;
+        height: 35px;
+    }
+}
 
 
 /*-----------------tablet----------------*/

@@ -198,6 +198,7 @@ header .container {
             outline: none;
             border: none;
             background-color: transparent;
+            cursor: pointer;
         }
         
     /*----------adaptive header-------
@@ -527,7 +528,13 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*----------------------MENU WINDOW-----------*/
 /*@media (min-width: 428px) {*/
-    .menu  {
+    .menu-container  {
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
         position: fixed;
             top: 0;
             left: 0;
@@ -538,28 +545,25 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             background: var(--color-text-onesect, #FFF);
             box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     }
-    .menu .is-open {
+    .menu-container .is-open {
     transform: translateX(0);
     }
-    .menu .container {
-    padding-top: 80px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-   
+    .mobile-menu {
+        justify-content: space-between;
     }
     
     
     .menu-btn {
         position: absolute;
     }
-    .menu .nav .list,
-    .menu .contacts .list {
+    .menu-container .nav .list,
+    .menu-container .contacts .list {
         display: flex;
         flex-direction: column;
         gap: 40px;
         
     }
-    .menu .list .nav {
+    .menu-container .list .nav {
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -572,24 +576,18 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             line-height: 1.11;
             text-transform: capitalize;
     }
-    .menu .container {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .menu .contacts {
-        margin-top: 264px;
+   
+    .menu-container .contacts {
         margin-bottom: 42px;
+        margin-top: 100px;
     }
-        .current::after {
-            display: none;
-        }
-        .contacts .list .link {
+      
+    .menu-container  .contacts .list .link {
                 font-size: 20px;
                 font-weight: 500;
                 line-height: 1.2;
         }
-        .contacts .list .tel {
+    .menu-container .contacts .list .tel {
                 color: var(--color-logo);
                 font-size: 36px;
                 font-weight: 700;
@@ -597,11 +595,13 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 text-transform: capitalize;
                 font-style: normal;
         }
-        .menu .social .list {
+     
+        .menu-container .social .list {
             display: flex;
             gap: 56px; 
+            justify-content: space-between;
         }
-        .menu .social .list .item {
+        .menu-container .social .list .item {
             width: 40px;
             height: 40px;
         }
