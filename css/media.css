@@ -171,10 +171,16 @@
                     url(../images/retina/background-hero-desctop-2x.jpg);
              }
     }
+    .section-hero .container {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 496px;
+    }
     .page-title {
         font-size: 56px;
         font-weight: 700;
         width: 496px;
+        margin-bottom: 48px;
     }
     .section-offer .container {
         padding-top: 120px;
