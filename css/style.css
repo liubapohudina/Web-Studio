@@ -809,6 +809,7 @@ display: inline-block;
     margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
+    width: 268px;
 }
 
 
@@ -821,7 +822,7 @@ display: inline-block;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-size: 16px;
-    width: 264px;
+    width: 268px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -837,6 +838,10 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 margin-bottom: 16px;
 text-align: center;
+}
+.social {
+    width: 208px;
+    margin: 0 auto;
 }
 .icon-soc {
     width: 100%;
