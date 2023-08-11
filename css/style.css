@@ -511,9 +511,11 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(0);
     }
     .mobile-menu {
-        align-items: space-between;
+        justify-content: space-between;
         display: flex;
         flex-direction: column;
+        width: 100vw;
+        height: 100vh;
     }
     
     .menu-btn {
@@ -545,8 +547,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
     .menu-container .contacts {
         margin-bottom: 48px;
-        margin-top: 80px;
-        
     }
       
     .menu-container  .contacts .list .link {
@@ -567,6 +567,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             gap: 56px; 
             justify-content: space-between;
+            max-width: 328px;
         }
         .menu-container .social .list .item {
             width: 40px;

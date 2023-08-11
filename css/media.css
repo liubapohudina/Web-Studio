@@ -14,6 +14,7 @@
         max-width: 310px;
     }
 }
+
 @media screen and (max-width: 400px) {
     .input-sub {
         max-width: 290px;
@@ -26,7 +27,8 @@
         line-height: 1.2;
     }
     .menu-container .social .list {
-        gap: 35px;
+        gap: 15px;
+        max-width: 270px;
     }
     .menu-container .social .list .item {
         width: 35px;
