@@ -159,6 +159,29 @@
     .subscribe {
         margin-top: 48px;
     }
+    .section-portfolio .container {
+         max-width: 766px;
+    }
+    .section-portfolio {
+        padding-top: 63px;
+        padding-bottom: 96px;
+    }
+    .section-portfolio .filter {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 64px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .list .button {
+        padding: 12px 24px;
+    }
+    
+    .section-portfolio .portfolio .item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1165px) {
     .customers .container,
@@ -270,5 +293,14 @@
     .footer .social {
         margin-right: 80px;
     }
-  
+    .section-portfolio {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    .section-portfolio .container {
+        max-width: 1128px;
+    }
+    .section-portfolio .portfolio .item {
+        flex-basis: calc((100% - 48px) / 3);
+    }
 }
