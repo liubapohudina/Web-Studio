@@ -3,12 +3,6 @@
     max-width: 426px;
   }
 }
-@media screen and (max-width: 768px) {
-  .header .container {
-      padding-top: 24px;
-      padding-bottom: 24px;
-  }
-}
 @media screen and (max-width: 340px) {
     .page-title {
         max-width: 310px;
@@ -51,6 +45,8 @@
 @media screen and (min-width: 768px) {
     header .container {
     max-width: 768px;
+    padding-top: 0;
+    padding-bottom: 0;
     }
     .container {
         max-width: 768px;
