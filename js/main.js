@@ -16,10 +16,10 @@ function handleClick(event) {
 
     if (buttonTxt === "all" || buttonTxt === txt) {
       parentCard.style.display = "block";
-      card.style.display = "block";
+      //card.style.display = "block";
     } else {
       parentCard.style.display = "none";
-      card.style.display = "none";
+      //card.style.display = "none";
     }
   });
 }
