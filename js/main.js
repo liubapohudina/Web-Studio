@@ -19,7 +19,6 @@ function handleClick(event) {
       //card.style.display = "block";
     } else {
       parentCard.style.display = "none";
-      //
       card.style.display = "none";
     }
   });
