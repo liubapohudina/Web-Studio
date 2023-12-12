@@ -2,6 +2,7 @@
   .container {
     max-width: 426px;
   }
+  
 }
 @media screen and (max-width: 340px) {
     .page-title {
